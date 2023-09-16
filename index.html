@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let data={
+            name:"jay",
+            age:20
+        }
+        let hobby = {
+            hobby:"cricket",
+            age:24
+        }
+        let standard = {
+            standard:"12",
+            age:17
+        }
+
+        localStorage.setItem("name",JSON.stringify(data));
+        localStorage.setItem("hobby",JSON.stringify(hobby));
+        localStorage.setItem("standard",JSON.stringify(standard));
+
+        let userData = localStorage.getItem("hobby");
+
+        console.log(userData);
+    </script>
+
+</body>
+</html>
